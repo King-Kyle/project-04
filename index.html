@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Photo Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="lightcase/src/css/lightcase.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <section class="filter">
+      <form class="myInput" method="post">
+        <input type="search" id="myInput" placeholder="Search" title="Search for images" > 
+      </form>
+    </section>
+    <section class="collection" >
+      <div class="flex-container" id="imagesSection">
+        <a href="photos/01.jpg" data-rel="lightcase:myCollection" title="Hay Bales" data-lc-caption="I love hay bales. Took this snap on a drive through the countryside past some straw fields." ><img class="thumbnails" src="photos/thumbnails/01.jpg" alt="Hay Bales" title="Hay Bales I love hay bales. Took this snap on a drive through the countryside past some straw fields."/></a>
+        <a href="photos/02.jpg" data-rel="lightcase:myCollection" title="Lake" data-lc-caption="The lake was so calm today. We had a great view of the snow on the mountains from here." ><img class="thumbnails" src="photos/thumbnails/02.jpg" alt="Lake" title="Lake The lake was so calm today. We had a great view of the snow on the mountains from here."/></a>
+        <a href="photos/03.jpg" data-rel="lightcase:myCollection" title="Canyon" data-lc-caption="I hiked to the top of the mountain and got this picture of the canyon and trees below." ><img class="thumbnails" src="photos/thumbnails/03.jpg" alt="Canyon" title="Canyon I hiked to the top of the mountain and got this picture of the canyon and trees below."/></a>
+        <a href="photos/04.jpg" data-rel="lightcase:myCollection" title="Iceberg" data-lc-caption="It was amazing to see an iceberg up close, it was so cold but didn’t snow today. " ><img class="thumbnails" src="photos/thumbnails/04.jpg" alt="Iceberg" title="Iceberg It was amazing to see an iceberg up close, it was so cold but didn’t snow today. "/></a>
+        <a href="photos/05.jpg" data-rel="lightcase:myCollection" title="Desert" data-lc-caption="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons." ><img class="thumbnails" src="photos/thumbnails/05.jpg" alt="Desert" title="Desert The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."/></a>
+        <a href="photos/06.jpg" data-rel="lightcase:myCollection" title="Fall" data-lc-caption="Fall is coming, I love when the leaves on the trees start to change color." ><img class="thumbnails" src="photos/thumbnails/06.jpg" alt="Fall" title="Fall Fall is coming, I love when the leaves on the trees start to change color."/></a>
+        <a href="photos/07.jpg" data-rel="lightcase:myCollection" title="Plantation" data-lc-caption="I drove past this plantation yesterday, everything is so green!" ><img class="thumbnails" src="photos/thumbnails/07.jpg" alt="Plantation" title="Plantation I drove past this plantation yesterday, everything is so green!"/></a>
+        <a href="photos/08.jpg" data-rel="lightcase:myCollection" title="Dunes" data-lc-caption="My summer vacation to the Oregon Coast. I love the sandy dunes!" ><img class="thumbnails" src="photos/thumbnails/08.jpg" alt="Dunes" title="Dunes My summer vacation to the Oregon Coast. I love the sandy dunes!"/></a>
+        <a href="photos/09.jpg" data-rel="lightcase:myCollection" title="Countryside Lane" data-lc-caption="We enjoyed a quiet stroll down this countryside lane." ><img class="thumbnails" src="photos/thumbnails/09.jpg" alt="Countryside Lane" title="Countryside Lane We enjoyed a quiet stroll down this countryside lane."/></a>
+        <a href="photos/10.jpg" data-rel="lightcase:myCollection" title="Sunset" data-lc-caption="Sunset at the coast! The sky turned a lovely shade of orange." ><img class="thumbnails" src="photos/thumbnails/10.jpg" alt="Sunset" title="Sunset Sunset at the coast! The sky turned a lovely shade of orange."/></a>
+        <a href="photos/11.jpg" data-rel="lightcase:myCollection" title="Cave" data-lc-caption="I did a tour of a cave today and the view of the landscape below was breathtaking." ><img class="thumbnails" src="photos/thumbnails/11.jpg" alt="Cave" title="Cave I did a tour of a cave today and the view of the landscape below was breathtaking."/></a>
+        <a href="photos/12.jpg" data-rel="lightcase:myCollection" title="Bluebells" data-lc-caption="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in." ><img class="thumbnails" src="photos/thumbnails/12.jpg" alt="Bluebells" title="Bluebells I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."/></a>
+      </div>
+    </section>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="lightcase/src/js/lightcase.js"></script>
+    <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      $('a[data-rel^=lightcase]').lightcase();
+    });
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
