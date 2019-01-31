@@ -6,6 +6,6 @@ An interactive photo gallery with a lightbox and search function:
 
 * Responsively designed through breakpoints
 
-* Hand coded a search function
+* Coded a search function
 
 * Used a jQuery plugin to create lightbox functionality
